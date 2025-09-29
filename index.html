@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilo.css" rel="stylesheet">
+    <title>Formulario</title>
+</head>
+<body>  
+    <div class="logo">
+        <img src="./images/logo.png" alt="Logo">
+    </div>
+    <div class="contenedor">        
+        <div class="formatoFormulario">          
+            <form>           
+                <div class="tituloPrincipal"><h1>Let's do this</h1></div> 
+                <div class="grupo">
+                    <label for="nombrePersona">FIRST NAME *</label>
+                    <input type="text" id="nombrePersona" required autofocus>  
+                </div>
+                <div class="grupo">
+                    <label for="apellidoPersona">LAST NAME *</label>
+                    <input type=" text" id="apellidoPersona" required>
+                </div>
+                <div class="grupo">
+                    <label for="email">EMAIL *</label>
+                    <input id="email" type="email" required>                
+                </div>                
+                <div class="grupo">
+                    <label for="telefono">PHONE NUMBER *</label>
+                    <input id="telefono" type="tel" pattern="^\d{3}-\d{7}$" required placeholder="___-_______"
+                    title="The format is: 3 digits-7 digits">
+                    
+                </div>
+                <div class="grupo">
+                    <label for="password">PASSWORD *</label>
+                    <input id="password" type="password" placeholder="" required>    
+                </div>
+                <div class="grupo">
+                    <label for="confPassword">CONFIRM PASSWORD *</label>
+                    <input id="confPassword" type="password" placeholder="" required>
+                </div>
+                <span class = "errorMensaje"></span>
+                <div class="boton">
+                    <button type="submit">Create Account</button>   
+                    <p><span style="font-weight: bold;"> Have an account? Log in</span></p>         
+                </div>
+            </form>
+        </div>
+      </div>
+    
+</body>
+</html>

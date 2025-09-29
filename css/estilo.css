@@ -1,0 +1,110 @@
+:root{
+    --color-de-fondo:white;
+    --color-de-letra:black;
+}
+@media (prefers-color-scheme: dark){
+    :root{
+        --color-de-fondo:black;
+        --color-de-letra:white;
+    }
+}
+@font-face {
+    font-family: 'Quicksand-VariableFont_wght.ttf';
+    src: url('../font/fuente/Quicksand-VariableFont_wght.ttf');    
+}
+body{
+    background-image: url('../images/fondo.jpg');
+    background-size: cover;
+    background-position:center 0.002rem;
+    background-repeat: no-repeat;      
+    font-family: 'Quicksand-VariableFont_wght.ttf', sans-serif;    
+    font-size: .7rem;  
+}
+.logo{
+    position: absolute;
+    width: 8rem;
+    top: 8rem;
+    left: 12rem;
+    z-index: 100;
+}
+.logo img{
+    width: 8rem;
+    height: auto;
+    object-fit: contain;
+}
+.contenedor{
+    width: 40rem;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    background-color: rgb(242, 242, 245);
+    box-shadow: 10px 5px 4px 0px rgba(236, 234, 234, 0.5);
+}
+.formatoFormulario{
+    width: 40rem;
+    height: 17rem;
+    background-color: rgb(248, 248, 248);
+    margin-top: 8rem;  
+    display: flex;
+    box-shadow: 2px 2px 10px gray;
+}
+.tituloPrincipal{
+    width: 40rem;
+    height: 0.5rem;
+}
+form{
+    display: flex;     
+    flex-wrap: wrap; 
+    gap: 3rem;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+}
+
+.grupo{
+    display: flex;
+    flex-direction: column;    
+    width: 15rem;
+    height: 0.5rem;
+}
+
+button{
+    height: 2rem;
+    width: 10rem; 
+    margin-top: 4rem;
+    background-color: green;
+    color: aliceblue;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px gray;   
+}
+.boton{
+    flex-direction: column;
+}
+input:valid{
+    border-color: green;
+}
+input:invalid{
+    border: 3px solid red;
+    background-color: #ffeaea;
+    outline: none;
+}
+input:invalid:focus{
+    box-shadow: 2px 2px 2px 2px red;
+}
+input[type="password"]{
+    border: 1px solid red;
+    transition: border-color 0.3 ease;
+}
+input{
+    border-radius: 3px;    
+}
+#nombrePersona, #apellidoPersona, 
+#email, #telefono{
+    border: 1px solid rgb(228, 223, 223);
+}
+button:hover{
+    cursor: pointer;
+}
+
+
+
+
